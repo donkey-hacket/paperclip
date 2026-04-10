@@ -7,7 +7,7 @@ app = 'paperclip-z1chxq'
 primary_region = 'iad'
 
 [build]
-
+  dockerfile = "Dockerfile"
 [[mounts]]
   source = 'paperclip'
   destination = '/paperclip'
