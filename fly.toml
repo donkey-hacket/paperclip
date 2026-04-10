@@ -19,7 +19,16 @@ primary_region = 'iad'
   auto_start_machines = true
   min_machines_running = 0
   processes = ['app']
-
+  
+[env]
+  # Fix permission issues by using mounted volume for writable data
+  PAPERCLIP_HOME = "/paperclip"
+  
+  # OpenCode adapter configuration for free models
+  OPENCODE_PROVIDER = "deepinfra"
+  OPENCODE_BASE_URL = "https://api.deepinfra.com/v1"
+  OPENCODE_API_KEY = "YOUR_DEEPINFRA_API_KEY"
+  
 [[vm]]
   memory = '1gb'
   cpu_kind = 'shared'
