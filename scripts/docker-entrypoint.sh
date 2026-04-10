@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
-
+echo "=== entrypoint running, /paperclip writable: $(test -w /paperclip && echo yes || echo no) ==="
 # Capture runtime UID/GID from environment variables, defaulting to 1000
 PUID=${USER_UID:-1000}
 PGID=${USER_GID:-1000}
