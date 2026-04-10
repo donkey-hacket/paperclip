@@ -64,7 +64,7 @@ RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 ENV NODE_ENV=production \
   HOME=/paperclip \
-  HOST=127.0.0.1 \
+  HOST=0.0.0.0 \
   PORT=3100 \
   SERVE_UI=true \
   PAPERCLIP_HOME=/paperclip \
