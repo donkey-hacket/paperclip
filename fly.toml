@@ -23,6 +23,8 @@ primary_region = 'iad'
 [env]
   # Fix permission issues by using mounted volume for writable data
   PAPERCLIP_HOME = "/paperclip"
+  PAPERCLIP_PUBLIC_URL = "https://paperclip-z1chxq.fly.dev"
+
   
   # OpenCode adapter configuration for free models
   OPENCODE_PROVIDER = "deepinfra"
